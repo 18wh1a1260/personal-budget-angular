@@ -13,6 +13,10 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
 import { SlotTwoComponent } from './slot-two/slot-two.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { ContactComponent } from './contact/contact.component';
+import { D3ChartComponent } from './d3-chart/d3-chart.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,15 @@ import { SlotTwoComponent } from './slot-two/slot-two.component';
     LoginComponent,
     P404Component,
     SlotTwoComponent,
+    BreadcrumbsComponent,
+    ContactComponent,
+    D3ChartComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
